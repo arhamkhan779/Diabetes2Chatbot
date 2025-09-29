@@ -8,7 +8,7 @@ from langchain_core.prompts import PromptTemplate
 
 # Load env
 load_dotenv()
-api_key = st.secrets("GEMINI_API_KEY")
+api_key = st.secrets["GEMINI_API_KEY"]
 
 # Embedding & LLM
 embedding_model = GoogleGenerativeAIEmbeddings(
