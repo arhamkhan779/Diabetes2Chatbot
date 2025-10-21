@@ -1,10 +1,14 @@
-streamlit
-streamlit-chat
-python-dotenv
-langchain
-langchain-community
-langchain-google-genai
-faiss-cpu
-google-generativeai
-pydantic
-langchain_core
+streamlit==1.50.0
+streamlit-chat==0.1.1
+python-dotenv==1.0.1
+
+# ✅ Compatible LangChain versions (with pydantic_v1 support)
+langchain==0.1.16
+langchain-core==0.1.45
+langchain-community==0.0.31
+langchain-google-genai==0.0.6
+
+# ✅ Required dependencies
+faiss-cpu==1.8.0
+google-generativeai==0.3.2
+pydantic==1.10.14
