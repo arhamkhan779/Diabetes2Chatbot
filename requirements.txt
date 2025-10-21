@@ -7,3 +7,4 @@ langchain-google-genai
 faiss-cpu
 google-generativeai
 pydantic
+langchain_core
