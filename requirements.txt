@@ -1,12 +1,6 @@
 streamlit
 streamlit-chat
 python-dotenv
-langchain
-langchain==0.1.16
-langchain-core==0.1.45
-langchain-community
-langchain-google-genai==0.0.6
 faiss-cpu
 google-generativeai
-pydantic
-langchain_core
+
