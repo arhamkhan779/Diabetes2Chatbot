@@ -4,3 +4,4 @@ python-dotenv
 faiss-cpu
 google-generativeai
 markdown
+langchain-core
