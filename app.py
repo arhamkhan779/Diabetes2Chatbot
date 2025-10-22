@@ -12,7 +12,7 @@ import logging
 import asyncio
 load_dotenv()
 
-api_key = st.secrets("GEMINI_API_KEY")
+api_key = st.secrets["GEMINI_API_KEY"]
 genai.configure(api_key=api_key)
 
 faiss_index = faiss.read_index(r"faq_index.faiss")
