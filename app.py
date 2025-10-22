@@ -5,11 +5,8 @@ import google.generativeai as genai
 import faiss
 import numpy as np
 import pickle
-import os
-import markdown
 from dotenv import load_dotenv
 import logging
-import asyncio
 load_dotenv()
 
 api_key = st.secrets["GEMINI_API_KEY"]
