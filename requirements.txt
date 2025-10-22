@@ -3,4 +3,4 @@ streamlit-chat
 python-dotenv
 faiss-cpu
 google-generativeai
-
+markdown
