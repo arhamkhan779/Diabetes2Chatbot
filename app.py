@@ -62,7 +62,7 @@ def generate_embeddings(text: str):
     """Generate embeddings using Gemini embedding model"""
     try:
         response = genai.embed_content(
-            model="models/text-embedding-004",
+            model="gemini-embedding-001",
             content=text
         )
         if response and "embedding" in response:

@@ -4,8 +4,8 @@ import google.generativeai as genai
 import faiss
 import numpy as np
 import pickle
-from langchain_community.document_loaders import TextLoader, PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import TextLoader,PyPDFLoader
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from dotenv import load_dotenv
 load_dotenv()
 # Configure logging
@@ -48,7 +48,7 @@ text_chunks = splitter.split_documents(all_documents)
 logging.info("Initializing embedding generation")
 def generate_embeddings(text):
     try:
-        response = genai.embed_content(model="models/text-embedding-004", content=text)
+        response = genai.embed_content(model="gemini-embedding-001", content=text)
         return np.array(response["embedding"], dtype=np.float32)
     except Exception as e:
         logging.error(f"Error generating embeddings: {e}")
